@@ -1,0 +1,30 @@
+{
+  "name": "name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "precommit": "yarn flow && lint-staged",
+    "flow": "flow",
+  },
+  "lint-staged": {
+    "*.{js,json,css}": ["prettier --write", "eslint --fix", "git add"]
+  },
+  "dependencies": {
+    "babel-plugin-transform-remove-console": "^6.8.5",
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^3",
+    "eslint-config-airbnb": "^15",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^5",
+    "eslint-plugin-react": "^7",
+    "flow-bin": "0.60.1",
+    "husky": "^0.14.3",
+    "jest": "21.2.1",
+    "lint-staged": "^5.0.0",
+    "prettier": "^1.8.2"
+  }
+}

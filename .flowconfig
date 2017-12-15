@@ -1,0 +1,9 @@
+[options]
+module.name_mapper='^[./a-zA-Z0-9$_-]+\.png$' -> 'RelativeImageStub'
+
+
+ImageStub.js
+// @flow
+
+const n: number = 1;
+export default n;
